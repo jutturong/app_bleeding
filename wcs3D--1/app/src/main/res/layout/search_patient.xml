@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false"
+
+    android:columnCount="4"
+    >
+
+
+    <TextView
+        android:text="กรอกแบบฟอร์ม"
+        android:textSize="32dip"
+
+        android:layout_columnSpan="4"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:text="แบบฟอร์มติดตามการเจริญเติบโตด้านนำ้หนัก"
+        android:textSize="16dip"
+
+        android:layout_columnSpan="4"
+        android:layout_gravity="left"
+        />
+
+
+    <TextView
+        android:text="ค้นหาชื่อ :"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:completionThreshold="1"
+        android:text="" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+
+
+
+<!--
+    <Button
+        android:text="Search"
+        android:id="@+id/btn_member"
+        android:layout_row="3"
+        android:layout_columnSpan="2"
+        android:layout_column="1"
+        />
+-->
+
+    <ImageButton
+        android:id="@+id/img_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:src="@drawable/searchicon1" />
+
+
+
+    </GridLayout>

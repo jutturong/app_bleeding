@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.wcs3d"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+
+        <activity
+
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:icon="@drawable/ic_launcher"
+
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:allowBackup="true"
+            android:name=".MainActivity"
+
+            android:icon="@drawable/ic_launcher"
+
+            android:theme="@style/AppTheme"
+
+
+            >
+        </activity>
+
+
+
+<!--
+
+<activity android:name=".thai101" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai102" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai103" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai104" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai105" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai106" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai107" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai108" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai109" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai110" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai111" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai112" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai113" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai214" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai215" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai216" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai217" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai218" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai219" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".thai220" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+
+<activity android:name=".math101" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math102" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math103" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math104" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math105" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math106" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math107" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math108" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math109" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math110" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math111" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math112" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math113" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math114" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math115" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math116" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math117" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math118" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math119" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".math120" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+
+<activity android:name=".eng101" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".eng102" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".eng103" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".eng104" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".eng105" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".eng106" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+<activity android:name=".eng107" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+
+-->
+
+<!--
+android:label="3Dwcs"
+android:label="3Dwcs"
+-->
+
+
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name=".lineChart2"  ></activity>
+        <activity android:name=".form_member"   ></activity>
+        <activity android:name=".linechart"  ></activity>
+
+
+
+
+
+    </application>
+
+</manifest>
