@@ -1,0 +1,11 @@
+getJSON2_.php   ==>call graph
+autocomp_patient.php ==>call graph  weight
+insertWeight.php ==>insert weight
+
+-----------------------------------------
+mobile  / page1.php   ????????
+
+
+configMYSQL.php
+configDB
+
