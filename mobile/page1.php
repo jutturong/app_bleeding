@@ -30,10 +30,10 @@
               
               require("configDB.php");
               
-             // $id_title= $_POST["id_title"];
+              $id_title= $_POST["id_title"];
               //$strSQL = "SELECT * FROM  `tb_feeding`  ; ";
-             //  $strSQL = "SELECT * FROM  `tb_feeding`  WHERE    id_title = $id_title  ; ";
-              $strSQL = "SELECT * FROM  `tb_feeding`   ";
+               $strSQL = "SELECT * FROM  `tb_feeding`  WHERE    id_title = $id_title  ; ";
+            //  $strSQL = "SELECT * FROM  `tb_feeding`   ";
               $objQuery = mysql_query($strSQL);
               $intNumField = mysql_num_fields($objQuery);
                $resultArray = array();
