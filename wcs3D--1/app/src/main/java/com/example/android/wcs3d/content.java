@@ -45,24 +45,7 @@ public class content extends Activity{
         setContentView(R.layout.content);
 
         final TextView txt=(TextView) findViewById(R.id.textView1);
-        /*
-        final TextView txt=(TextView) findViewById(R.id.textView1);
-        txt.setText("\t \t \t การเลี้ยงทารกปากแหว่งเพดานโหว่ด้วยน้ำนมแม่ \n" +
-                "ทารกปากแหว่งเพดานโหว่มักจะประสบกับปัญหาในการให้นม \n" +
-                "จึงส่งผลกระทบต่อภาวะโภชนาการตั้งแต่แรกคลอด\n " +
-                "ปัญหาการดูดการกลืนเป็นปัญหาแรกที่ต้องได้รับการแก้ไข");
-
-         */
-
-
-/*
-        String strJSON = "[{\"MemberID\":\"1\",\"Name\":\"Weerachai\",\"Tel\":\"0819876107\"}" +
-                ",{\"MemberID\":\"2\",\"Name\":\"Win\",\"Tel\":\"021978032\"}" +
-                ",{\"MemberID\":\"3\",\"Name\":\"Eak\",\"Tel\":\"0876543210\"}]";
-*/
-
-
-       // String strJSON = "[{\"Content\":\"การเลี้ยงทารกปากแหว่งเพดานโหว่ด้วยน้ำนมแม่\"}]";
+      
 
 
         Intent intent=getIntent();
