@@ -116,6 +116,7 @@ android:label="3Dwcs"
         <activity android:name=".lineChart2"  ></activity>
         <activity android:name=".form_member"   ></activity>
         <activity android:name=".linechart"  ></activity>
+        <activity android:name=".content"  ></activity>
 
 
 
