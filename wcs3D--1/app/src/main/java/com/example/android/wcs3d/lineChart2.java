@@ -52,8 +52,8 @@ public class lineChart2 extends Activity {
 
       String Id_per;
       int  year;
-      double[] stackY=new double[100];
-      double[] stackX=new double[100];
+     private double[] stackY=new double[100];
+     private double[] stackX=new double[100];
       int numrows;
       private   String id_sex;
 
@@ -138,9 +138,32 @@ public class lineChart2 extends Activity {
 
                   //  testDialog(params.toString());
                   //  testDialog(url);
+                  //  testDialog(getHttpPost(url, params));
+
                     try {
                         JSONArray data__ = new JSONArray(getHttpPost(url, params));
-                        testDialog(data__.toString());
+                        // testDialog(data__.toString());
+
+                        JSONObject obj_;
+                       // String test1="";
+                       // String test2="";
+                        int max=0;
+                        for(int i=0;i<data__.length();i++)
+                            {
+                                 obj_=data__.getJSONObject(i);
+                                stackY[i]=obj_.getDouble("weight");
+                                stackX[i]=obj_.getDouble("year");
+                                id_sex=obj_.getString("id_sex");
+                               // test1=obj_.getString("weight");
+                              //  test2=obj_.getString("year");
+                               // testDialog(test1);
+                               // testDialog(test2);
+                              max=i;
+                            }
+
+                         //  testDialog(stackY.toString());
+
+                        openChart(stackY,stackX,max,id_sex);
                     }
                     catch (Exception e)
                     {
