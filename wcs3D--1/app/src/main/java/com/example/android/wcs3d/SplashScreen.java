@@ -39,7 +39,10 @@ public class SplashScreen extends Activity {
     String strUser;
     String strPass;
 
-    static  String ip ="http://10.87.196.113/";
+   // static  String ip ="http://10.87.196.113/";
+    static  String ip ="http://kkucleft.kku.ac.th/";
+
+
     //String url="http://10.87.59.117/json2/checkLogin_.php";
     String url=  ip +  "json2/checkLogin_.php";
 
