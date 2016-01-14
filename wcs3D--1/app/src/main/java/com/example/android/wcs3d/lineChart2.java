@@ -407,7 +407,7 @@ public class lineChart2 extends Activity {
         testRenderer.setFillPoints(true);
         testRenderer.setLineWidth(3);
         testRenderer.setDisplayChartValues(true);
-        testRenderer.setChartValuesTextSize(15);  //font size of Label  X && Y
+        testRenderer.setChartValuesTextSize(3);  //font size of Label  X && Y
         testRenderer.setDisplayChartValues(true);
         testRenderer.setChartValuesFormat(new DecimalFormat("##.##"));
         testRenderer.setDisplayBoundingPoints(true);
@@ -417,9 +417,9 @@ public class lineChart2 extends Activity {
         // Creating a XYMultipleSeriesRenderer to customize the whole chart
         XYMultipleSeriesRenderer multiRenderer = new XYMultipleSeriesRenderer();
         multiRenderer.setXLabels(0);
-        multiRenderer.setChartTitle(" กราฟแสดงน้ำหนักตามเกณฑ์อายุ " + sex_detail );
+        multiRenderer.setChartTitle(" กราฟแสดงน้ำหนักและอายุ " + sex_detail );
        // multiRenderer.setLabelsColor(Color.WHITE);
-        multiRenderer.setChartTitleTextSize(20);
+        multiRenderer.setChartTitleTextSize(17);
 
         multiRenderer.setXTitle(" อายุ (เดือน) ");
         multiRenderer.setXLabels(25);
