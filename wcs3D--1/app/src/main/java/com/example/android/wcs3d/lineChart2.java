@@ -407,7 +407,7 @@ public class lineChart2 extends Activity {
         testRenderer.setFillPoints(true);
         testRenderer.setLineWidth(3);
         testRenderer.setDisplayChartValues(true);
-        testRenderer.setChartValuesTextSize(20);  //font size of Label  X && Y
+        testRenderer.setChartValuesTextSize(15);  //font size of Label  X && Y
         testRenderer.setDisplayChartValues(true);
         testRenderer.setChartValuesFormat(new DecimalFormat("##.##"));
         testRenderer.setDisplayBoundingPoints(true);
@@ -418,7 +418,8 @@ public class lineChart2 extends Activity {
         XYMultipleSeriesRenderer multiRenderer = new XYMultipleSeriesRenderer();
         multiRenderer.setXLabels(0);
         multiRenderer.setChartTitle(" กราฟแสดงน้ำหนักตามเกณฑ์อายุ " + sex_detail );
-        multiRenderer.setChartTitleTextSize(30);
+       // multiRenderer.setLabelsColor(Color.WHITE);
+        multiRenderer.setChartTitleTextSize(20);
 
         multiRenderer.setXTitle(" อายุ (เดือน) ");
         multiRenderer.setXLabels(25);
@@ -426,9 +427,9 @@ public class lineChart2 extends Activity {
         multiRenderer.setYTitle(" น้ำหนัก (กิโลกรัม) ");
         multiRenderer.setYLabels(25);
 
-        multiRenderer.setAxisTitleTextSize(30);
+        multiRenderer.setAxisTitleTextSize(15);
 
-        multiRenderer.setLabelsTextSize(20); //size font  x
+        multiRenderer.setLabelsTextSize(15); //size font  x
 
         multiRenderer.setBackgroundColor(Color.BLACK); // back ground color
         multiRenderer.setApplyBackgroundColor(true);
