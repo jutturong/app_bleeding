@@ -478,7 +478,7 @@ public class lineChart2 extends Activity {
 
     }
 
-    private  void  showDia(String str) //test dialogbox
+    public     void  showDia(String str) //test dialogbox
     {
         AlertDialog.Builder adb=new AlertDialog.Builder(this);
         AlertDialog ad=adb.create();

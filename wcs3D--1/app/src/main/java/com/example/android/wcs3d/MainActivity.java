@@ -574,7 +574,7 @@ public class MainActivity extends ActionBarActivity {
         listDataHeader.add("ติดตามการเจริญเติบโตด้านน้ำหนัก");
 
         List<String> section1 = new ArrayList<String>();
-        section1.add("-ฟอร์มกรอกข้อมูลผลการชั่ง"); //101
+        section1.add("-ฟอร์มกรอกข้อมูลผลการชั่ง/ส่วนสูง"); //101
         section1.add("-แสดงกราฟน้ำหนัก"); //102
 
 

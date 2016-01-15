@@ -1,10 +1,12 @@
 package com.example.android.wcs3d;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -32,7 +34,7 @@ import java.util.List;
  * Created by linux on 7/23/15.
  */
 
-public class content extends Activity{
+public class content extends lineChart2{
 
 
    public String url= SplashScreen.ip +  "mobile/page1.php";
@@ -50,6 +52,7 @@ public class content extends Activity{
 
         Intent intent=getIntent();
         final String id_title=intent.getStringExtra("id_title");
+
 
         // Paste Parameters
         List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -74,9 +77,8 @@ public class content extends Activity{
 
 
             txt.setText(c.getString("Content"));
-
+            showDia(c.getString("Content"));
         }
-
 
 
 
